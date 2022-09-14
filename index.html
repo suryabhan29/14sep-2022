@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .myform{
+                width:40%;
+                height: 600px;
+                
+                margin: auto;
+                box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3);
+                padding: 20px;
+            }
+            .stepbox{
+                height: 70px;
+                border: 1px solid red;
+                margin-bottom: 20px;
+            }
+            .left{
+                float:left;
+            }
+            .right{
+                float: right;
+            }
+            .myform h3,.myform p{
+                text-align: center;
+            }
+            .progressbar{
+                width: 25%;
+                height: 20px;
+                margin-top: 50px;
+                background-color: #7E69E1;
+            }
+            .clearfix{
+                clear: both;
+            }
+            .myform input.myinput{
+                background-color: #F8F8F8;
+                border: none;
+                width: 96%;
+                height: 40px;
+                padding: 0px 10px;
+                
+            }
+            .movedown{
+                margin: 20px 0px;
+
+            }
+            .myform input[type="button"]{
+                float: right;
+                padding: 10px 40px;
+                border: none;
+                color: #F8F8F8;
+                background-color: #7E69E1;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="myform">
+            <h3>SIGN UP YOUR PAYMENT ACCOUNT</h3>
+            <p>Fill all the fields to go to next step</p>
+            <div class="stepbox">
+                <div class="progressbar"></div>
+            </div>
+            <div class="step1">
+                <div >
+                    <strong class="left">Account Information</strong>
+                    <span class="right">Step 1 - 4</span>
+                </div>
+                <div class="clearfix"></div>
+                <div class="movedown">
+                    <label>Email: *</label>
+                    <input class="myinput" type="email" placeholder="Email" />
+                </div>
+                <div class="movedown">
+                    <label>Email: *</label>
+                    <input class="myinput"  type="email" placeholder="Email" />
+                </div><div class="movedown">
+                    <label>Email: *</label>
+                    <input class="myinput"  type="email" placeholder="Email" />
+                </div><div class="movedown">
+                    <label>Email: *</label>
+                    <input class="myinput"  type="email" placeholder="Email" />
+                </div>
+            </div>
+            <input type="button" name="next" value="NEXT" />
+        </form>
+    </body>
+</html>

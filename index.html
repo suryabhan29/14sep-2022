@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             body{
                 font-family: Arial, Helvetica, sans-serif;
@@ -60,6 +61,32 @@
                 background-color: #7E69E1;
                 border-radius: 5px;
             }
+            label{
+                display: block;
+                margin-bottom: 10px;
+            }
+            span.purple{
+                color: #7E69E1;
+            }
+            .stepboxsteps{
+                list-style: none;
+            }
+            .stepboxsteps > li{
+                display: inline-block;
+                padding: 10px 15px;
+                background-color: #DDDDDD;
+                
+                margin: 0px 30px;
+                border-radius: 30px;
+            }
+            .stepboxsteps > li.active{
+                background-color: #7E69E1;
+            }
+            .stepboxsteps > li > a{
+                color: #FFF;
+                text-decoration: none;
+            }
+
         </style>
     </head>
     <body>
@@ -67,6 +94,19 @@
             <h3>SIGN UP YOUR PAYMENT ACCOUNT</h3>
             <p>Fill all the fields to go to next step</p>
             <div class="stepbox">
+                <ul class="stepboxsteps">
+                    <li class="active">
+                        <a href="#">1</a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li><li>
+                        <a href="#">3</a>
+                    </li><li>
+                        <a href="#">4</a>
+                    </li>
+                </ul>
                 <div class="progressbar"></div>
             </div>
             <div class="step1">
@@ -76,21 +116,22 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="movedown">
-                    <label>Email: *</label>
+                    <label>Email: <span class="purple"><span class="purple">*</span></span></label>
                     <input class="myinput" type="email" placeholder="Email" />
                 </div>
                 <div class="movedown">
-                    <label>Email: *</label>
-                    <input class="myinput"  type="email" placeholder="Email" />
+                    <label>User Name: <span class="purple">*</span></label>
+                    <input class="myinput"  type="text" placeholder="User name" />
                 </div><div class="movedown">
-                    <label>Email: *</label>
-                    <input class="myinput"  type="email" placeholder="Email" />
+                    <label>password: <span class="purple">*</span></label>
+                    <input class="myinput"  type="password" placeholder=" User password" />
                 </div><div class="movedown">
-                    <label>Email: *</label>
-                    <input class="myinput"  type="email" placeholder="Email" />
+                    <label>Confirm password: <span class="purple">*</span></label>
+                    <input class="myinput"  type="password" placeholder="confirm password" />
                 </div>
             </div>
             <input type="button" name="next" value="NEXT" />
         </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>
